@@ -30,16 +30,7 @@ Debemos hacer algo similar en otro archivo, para hacer lo ejecutamos el siguient
 ```bash
 $ sudo nano /etc/ssh/sshd_config
 ```
-Buscamos las siguientes lineas en este archivo
-```bash
-#  ForwardX11 yes
-#  ForwardX11Trusted no
-```
-Y las modificamos por las siguientes lineas
-```bash
-ForwardX11 yes
-ForwardX11Trusted yes
-```
+
 Para guardar el archivo, se debe tocar Ctrl+X y luego la tecla Y para confirmar los cambios, luego enter para confirmar que el nombre del archivo se mantenga como estaba previamente.  
 Una vez terminados los cambios, se debe reiniciar el servidor SSH para que se actualicen los cambios.
 ```bash
